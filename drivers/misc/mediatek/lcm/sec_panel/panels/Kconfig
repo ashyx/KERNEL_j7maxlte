@@ -1,0 +1,22 @@
+config DISPLAY_USE_INFO
+	tristate "Support display use info logging"
+	default n
+
+config DISPLAY_USE_INFO_MODEL_NAME
+	depends on DISPLAY_USE_INFO
+	string "model name for display use info logging"
+	default "NONE"
+	help
+	  This string is model name for display use info logging.
+
+config SEC_PANEL_DOZE_MODE
+	tristate "Support DOZE MODE"
+	default n
+
+config SEC_PANEL_MDNIE_LITE
+	tristate "Support MDNIE LITE"
+	default n
+
+config SEC_PANEL_S6E3FA3_AMS549KU2X
+	tristate "S6E3FA3 AMS549KU2X AMOLED driver"
+	default n
